@@ -1,0 +1,62 @@
+body {
+font-family: sans-serif;
+text-align: center;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: white;
+min-height: 100vh;
+
+padding: 20px;
+margin: 0;
+}
+.container { max-width: 600px; margin: 0 auto; }
+.sensor-data {
+display: flex;
+justify-content: space-around;
+margin: 30px 0;
+}
+.data-box {
+background: rgba(255, 255, 255, 0.1);
+padding: 15px;
+border-radius: 10px;
+width: 30%;
+}
+.data-box p {
+font-size: 2em;
+font-weight: bold;
+margin: 10px 0 0 0;
+}
+.bubble-level {
+width: 300px;
+height: 300px;
+background: rgba(255, 255, 255, 0.15);
+border-radius: 50%;
+margin: 30px auto;
+position: relative;
+border: 3px solid rgba(255,255,255,0.3);
+overflow: hidden;
+
+}
+.bubble {
+width: 60px;
+height: 60px;
+background: radial-gradient(circle at 30% 30%, #ffcc00, #ff9900);
+border-radius: 50%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+transition: transform 0.1s ease-out;
+box-shadow: inset -5px -5px 10px rgba(0,0,0,0.3);
+}
+button {
+padding: 15px 30px;
+font-size: 1.1em;
+background-color: #2ecc71;
+color: white;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+margin-top: 20px;
+}
+button:hover { background-color: #27ae60; }
+#status { margin-top: 20px; font-style: italic; }

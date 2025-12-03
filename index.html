@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nivel PWA - Sensor de Orientación</title>
+<meta name="theme-color" content="#4a90e2">
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+<div class="container">
+<h1>📱 Nivel de Burbuja PWA</h1>
+<p class="info">Gira tu dispositivo (o ventana) para ver los valores del sensor.</p>
+
+<div class="sensor-data">
+<div class="data-box">
+<h3>Alpha (Rotación Z)</h3>
+<p id="alpha">0</p>
+</div>
+
+<div class="data-box">
+<h3>Beta (Inclinación X)</h3>
+<p id="beta">0</p>
+</div>
+<div class="data-box">
+<h3>Gamma (Inclinación Y)</h3>
+<p id="gamma">0</p>
+</div>
+</div>
+
+<!-- Simulador visual de nivel -->
+<div class="bubble-level">
+<div class="bubble" id="bubble"></div>
+</div>
+
+<p id="status">Esperando permisos del sensor...</p>
+<button id="requestPermission">Activar Sensor</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
